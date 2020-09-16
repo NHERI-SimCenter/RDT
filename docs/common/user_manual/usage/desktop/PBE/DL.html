@@ -1,44 +1,43 @@
 
 
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8">
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>4.7. DL: Damage and Loss Model &mdash; Performance Based Engineering Application  documentation</title>
+  <title>DL: Damage and Loss Model &mdash; Performance Based Engineering Application  documentation</title>
   
-
-  
-  
-  
-  
-
-  
-  <script type="text/javascript" src="../../../../../_static/js/modernizr.min.js"></script>
-  
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../../../../../" src="../../../../../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../../../../../_static/jquery.js"></script>
-        <script type="text/javascript" src="../../../../../_static/underscore.js"></script>
-        <script type="text/javascript" src="../../../../../_static/doctools.js"></script>
-        <script type="text/javascript" src="../../../../../_static/language_data.js"></script>
-        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
-    <script type="text/javascript" src="../../../../../_static/js/theme.js"></script>
-
-    
 
   
   <link rel="stylesheet" href="../../../../../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../../../../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../../../../../_static/css/custom.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../../../" src="../../../../../_static/documentation_options.js"></script>
+        <script src="../../../../../_static/jquery.js"></script>
+        <script src="../../../../../_static/underscore.js"></script>
+        <script src="../../../../../_static/doctools.js"></script>
+        <script src="../../../../../_static/language_data.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../../../../../_static/js/theme.js"></script>
+
+    
     <link rel="index" title="Index" href="../../../../../genindex.html" />
     <link rel="search" title="Search" href="../../../../../search.html" />
-    <link rel="next" title="4.7.1. FEMA" href="FEMA.html" />
-    <link rel="prev" title="4.6. RV: Random Variables" href="../RV.html" />
 <script src="https://cdn.jsdelivr.net/npm/vega@5.12.1"></script>
 <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.13.1"></script>
 <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.8.0"></script>
@@ -83,6 +82,7 @@
           
         </div>
 
+        
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           
             
@@ -90,48 +90,15 @@
               
             
             
-              <p class="caption"><span class="caption-text">User Manual</span></p>
-<ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../../ack.html">1. Acknowledgments</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../about/PBE/about.html">2. About</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../installation/desktop/installation.html">3. Installation</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../usage.html">4. User Guide</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../UQ.html">4.1. UQ: Uncertainty Quantification</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../GI.html">4.2. GI: General Information</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../SIM.html">4.3. SIM: Structural Model</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../earthquake/earthquakeEvents.html">4.4. EVT: Earthquake Events</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../FEM.html">4.5. FEM: Finite Element Method</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../RV.html">4.6. RV: Random Variables</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">4.7. DL: Damage and Loss Model</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="FEMA.html">4.7.1. FEMA</a></li>
-<li class="toctree-l3"><a class="reference internal" href="HAZUS.html">4.7.2. HAZUS MH</a></li>
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">DL: Damage and Loss Model</a></li>
 </ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="resPBE.html">4.8. RES: Results</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../../../troubleshooting/desktop/troubleshooting.html">5. Troubleshooting</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../examples/desktop/examples.html">6. Examples</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../requirements/PBE.html">7. Requirements</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../bugs.html">8. Bugs &amp; Feature Requests</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../license.html">9. Copyright and License</a></li>
-</ul>
-<p class="caption"><span class="caption-text">Technical Manual</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../../../technical_manual/desktop/technical_manual.html">1. Technical Manual</a></li>
-</ul>
-<p class="caption"><span class="caption-text">Developer Manual</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../../../developer_manual/how_to_build/desktop/how_to_build.html">1. How to Build</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../developer_manual/architecture/desktop/architecture.html">2. Software Architecture</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../developer_manual/how_to_extend/desktop/how_to_extend.html">3. How to Extend</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../developer_manual/verification/desktop/verification.html">4. Verification</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../developer_manual/coding_style/desktop/coding_style.html">5. Coding Style</a></li>
-</ul>
-
+</div>
             
           
         </div>
+        
       </div>
     </nav>
 
@@ -170,11 +137,9 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="../../../../../index.html">Docs</a> &raquo;</li>
+      <li><a href="../../../../../index.html" class="icon icon-home"></a> &raquo;</li>
         
-          <li><a href="../usage.html">4. User Guide</a> &raquo;</li>
-        
-      <li>4.7. DL: Damage and Loss Model</li>
+      <li>DL: Damage and Loss Model</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -194,33 +159,33 @@
            <div itemprop="articleBody">
             
   <div class="section" id="dl-damage-and-loss-model">
-<span id="lbldl"></span><h1>4.7. DL: Damage and Loss Model<a class="headerlink" href="#dl-damage-and-loss-model" title="Permalink to this headline">¶</a></h1>
-<p>The Damage and Loss panel provides users a convenient way to define the damage and loss model for the building. The dropdown list at the top of the panel allows users to choose between two loss-assessment methods: FEMA P58 <a class="bibtex reference internal" href="../../../../../index.html#applied-technology-council-atc-fema-2012" id="id1">[ATC12]</a> and HAZUS MH <a class="bibtex reference internal" href="../../../../../index.html#federal-emergency-management-agency-fema-hazus-2018-2" id="id2">[FEM18]</a>. The method chosen determines the information displayed in the rest of the panel. The two methods are discussed in the following sections.</p>
+<span id="lbldl"></span><h1>DL: Damage and Loss Model<a class="headerlink" href="#dl-damage-and-loss-model" title="Permalink to this headline">¶</a></h1>
+<p>The Damage and Loss panel provides users a convenient way to define the damage and loss model for the building. The dropdown list at the top of the panel allows users to choose between two loss-assessment methods: FEMA P58 <a href="#id1"><span class="problematic" id="id2">:cite:`applied_technology_council_atc_fema_2012`</span></a> and HAZUS MH <a href="#id3"><span class="problematic" id="id4">:cite:`federal_emergency_management_agency_fema_hazus_2018-2`</span></a>. The method chosen determines the information displayed in the rest of the panel. The two methods are discussed in the following sections.</p>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="FEMA.html">4.7.1. FEMA</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="FEMA.html#general-settings">4.7.1.1. General Settings</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="FEMA.html">FEMA</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="FEMA.html#general-settings">General Settings</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="FEMA.html#response-model">Response Model</a></li>
 <li class="toctree-l3"><a class="reference internal" href="FEMA.html#damage-model">Damage Model</a></li>
 <li class="toctree-l3"><a class="reference internal" href="FEMA.html#loss-model">Loss Model</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="FEMA.html#building-components">4.7.1.2. Building Components</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="FEMA.html#building-components">Building Components</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="FEMA.html#component-ensemble">Component Ensemble</a></li>
 <li class="toctree-l3"><a class="reference internal" href="FEMA.html#component-details">Component Details</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="FEMA.html#collapse-modes">4.7.1.3. Collapse Modes</a></li>
-<li class="toctree-l2"><a class="reference internal" href="FEMA.html#dependencies">4.7.1.4. Dependencies</a></li>
-<li class="toctree-l2"><a class="reference internal" href="FEMA.html#logical-components">4.7.1.5. Logical components</a></li>
-<li class="toctree-l2"><a class="reference internal" href="FEMA.html#model-parameters">4.7.1.6. Model parameters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="FEMA.html#collapse-modes">Collapse Modes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="FEMA.html#dependencies">Dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="FEMA.html#logical-components">Logical components</a></li>
+<li class="toctree-l2"><a class="reference internal" href="FEMA.html#model-parameters">Model parameters</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="HAZUS.html">4.7.2. HAZUS MH</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="HAZUS.html#general-settings">4.7.2.1. General Settings</a></li>
-<li class="toctree-l2"><a class="reference internal" href="HAZUS.html#response-model">4.7.2.2. Response Model</a></li>
-<li class="toctree-l2"><a class="reference internal" href="HAZUS.html#damage-model">4.7.2.3. Damage Model</a></li>
-<li class="toctree-l2"><a class="reference internal" href="HAZUS.html#loss-model">4.7.2.4. Loss Model</a></li>
+<li class="toctree-l1"><a class="reference internal" href="HAZUS.html">HAZUS MH</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="HAZUS.html#general-settings">General Settings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="HAZUS.html#response-model">Response Model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="HAZUS.html#damage-model">Damage Model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="HAZUS.html#loss-model">Loss Model</a></li>
 </ul>
 </li>
 </ul>
@@ -238,11 +203,19 @@
 
   <div role="contentinfo">
     <p>
+        
         &copy; Copyright 2019, The Regents of the University of California
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -253,7 +226,6 @@
 
   </div>
   
-
 
   <script type="text/javascript">
       jQuery(function () {

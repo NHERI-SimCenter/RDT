@@ -1,8 +1,7 @@
 
 
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8">
   
@@ -12,29 +11,31 @@
   
 
   
+  <link rel="stylesheet" href="../../../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../../_static/css/custom.css" type="text/css" />
+
+  
   
   
   
 
   
-  <script type="text/javascript" src="../../../../../_static/js/modernizr.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="../../../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="../../../../../" src="../../../../../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../../../../../_static/jquery.js"></script>
-        <script type="text/javascript" src="../../../../../_static/underscore.js"></script>
-        <script type="text/javascript" src="../../../../../_static/doctools.js"></script>
-        <script type="text/javascript" src="../../../../../_static/language_data.js"></script>
-        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script src="../../../../../_static/jquery.js"></script>
+        <script src="../../../../../_static/underscore.js"></script>
+        <script src="../../../../../_static/doctools.js"></script>
+        <script src="../../../../../_static/language_data.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
     <script type="text/javascript" src="../../../../../_static/js/theme.js"></script>
 
     
-
-  
-  <link rel="stylesheet" href="../../../../../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../../../../../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../../../../../_static/css/custom.css" type="text/css" />
     <link rel="index" title="Index" href="../../../../../genindex.html" />
     <link rel="search" title="Search" href="../../../../../search.html" />
     <link rel="next" title="3.4.2. PEER NGA" href="peerNGA.html" />
@@ -83,6 +84,7 @@
           
         </div>
 
+        
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           
             
@@ -138,6 +140,7 @@
             
           
         </div>
+        
       </div>
     </nav>
 
@@ -176,13 +179,13 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="../../../../../index.html">Docs</a> &raquo;</li>
+      <li><a href="../../../../../index.html" class="icon icon-home"></a> &raquo;</li>
         
-          <li><a href="../usage.html">3. User Guide</a> &raquo;</li>
+          <li><a href="../usage.html"><span class="section-number">3. </span>User Guide</a> &raquo;</li>
         
-          <li><a href="earthquakeEvents.html">3.4. EVT: Earthquake Events</a> &raquo;</li>
+          <li><a href="earthquakeEvents.html"><span class="section-number">3.4. </span>EVT: Earthquake Events</a> &raquo;</li>
         
-      <li>3.4.1. Stochastic Ground Motions</li>
+      <li><span class="section-number">3.4.1. </span>Stochastic Ground Motions</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -202,24 +205,24 @@
            <div itemprop="articleBody">
             
   <div class="section" id="stochastic-ground-motions">
-<h1>3.4.1. Stochastic Ground Motions<a class="headerlink" href="#stochastic-ground-motions" title="Permalink to this headline">¶</a></h1>
+<h1><span class="section-number">3.4.1. </span>Stochastic Ground Motions<a class="headerlink" href="#stochastic-ground-motions" title="Permalink to this headline">¶</a></h1>
 <p>This panel allows users to generate synthetic ground motions for a
 target seismic event. In order to do so, the stochastic ground motion
 model is selected from the <code class="docutils literal notranslate"><span class="pre">drop-down</span> <span class="pre">menu</span></code>, which is as shown
 in :numref:fig-stochasticVlachos-event’. Two stochastic motion models are currently available:
-Vlachoes et al. (2018) <a class="bibtex reference internal" href="../../../../../index.html#vlachos2018predictive" id="id1">[VPD18]</a> and  Dabaghi &amp; Der Kiureghian (2014, 2017, 2018)
-<a class="bibtex reference internal" href="../../../../../index.html#dabaghi2014stochastic" id="id2">[DK14]</a><a class="bibtex reference internal" href="../../../../../index.html#dabaghi2017stochastic" id="id3">[DDK17]</a><a class="bibtex reference internal" href="../../../../../index.html#dabaghi2018simulation" id="id4">[DDK18]</a>. Depending on the
+Vlachoes et al. (2018) <a href="#id1"><span class="problematic" id="id2">:cite:`vlachos2018predictive`</span></a> and  Dabaghi &amp; Der Kiureghian (2014, 2017, 2018)
+<a href="#id3"><span class="problematic" id="id4">:cite:`dabaghi2014stochastic,dabaghi2017stochastic,dabaghi2018simulation`</span></a>. Depending on the
 model selected, the user will be asked to enter values for a number of parameters that are
 used to generate a seismic event. For the Vlachos er al. model users is required to input the <code class="docutils literal notranslate"><span class="pre">moment</span> <span class="pre">magnitude',</span> <span class="pre">``site</span> <span class="pre">to</span> <span class="pre">rupture</span> <span class="pre">distance</span></code> and the <code class="docutils literal notranslate"><span class="pre">average</span> <span class="pre">shear</span> <span class="pre">wave</span> <span class="pre">velocity</span></code>.</p>
-<div class="align-center figure" id="id6">
+<div class="align-center figure" id="id7">
 <span id="fig-stochasticvlachos-event"></span><img alt="../../../../../_images/stochasticVlachos.png" src="../../../../../_images/stochasticVlachos.png" />
-<p class="caption"><span class="caption-number">Fig. 3.4.1 </span><span class="caption-text">Vlachos et al. (2018) model inputs.</span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 3.4.1 </span><span class="caption-text">Vlachos et al. (2018) model inputs.</span><a class="headerlink" href="#id7" title="Permalink to this image">¶</a></p>
 </div>
 <p id="fig-stochasticdabaghi-event">For the Dabaghi &amp; Der Kiureghian model geometric directivity parameters, as shown in Cref{fig:dabaghi}, required by the Dabaghi &amp; Der Kiureghian model are described completely in Somerville et al. (1997)
-<a class="bibtex reference internal" href="../../../../../index.html#somerville1997modification" id="id5">[SSGA97]</a>.</p>
-<div class="align-center figure" id="id7">
+<a href="#id5"><span class="problematic" id="id6">:cite:`somerville1997modification`</span></a>.</p>
+<div class="align-center figure" id="id8">
 <img alt="../../../../../_images/stochasticDabaghi.png" src="../../../../../_images/stochasticDabaghi.png" />
-<p class="caption"><span class="caption-number">Fig. 3.4.2 </span><span class="caption-text">Dabaghi &amp; Der Kiureghian (2018) model inputs.</span><a class="headerlink" href="#id7" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 3.4.2 </span><span class="caption-text">Dabaghi &amp; Der Kiureghian (2018) model inputs.</span><a class="headerlink" href="#id8" title="Permalink to this image">¶</a></p>
 </div>
 <p>Additionally, users can provide a seed for either model if they desire the same
 suite of synthetic motions to be generated on multiple occasions.  If
@@ -246,11 +249,19 @@ the <strong>UQ</strong> tab.</p>
 
   <div role="contentinfo">
     <p>
+        
         &copy; Copyright 2019, The Regents of the University of California
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -261,7 +272,6 @@ the <strong>UQ</strong> tab.</p>
 
   </div>
   
-
 
   <script type="text/javascript">
       jQuery(function () {
