@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>2.2.6. EDP Applications &mdash; Regional D* T* Application  documentation</title>
+  <title>2.2.6. EDP Applications &mdash; Regional Resilience Determination Tool  documentation</title>
   
 
   
@@ -27,15 +27,35 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="../../../../" src="../../../../_static/documentation_options.js"></script>
+<<<<<<< HEAD
         <script src="../../../../_static/jquery.js"></script>
         <script src="../../../../_static/underscore.js"></script>
         <script src="../../../../_static/doctools.js"></script>
         <script src="../../../../_static/language_data.js"></script>
         <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+=======
+        <script type="text/javascript" src="../../../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../../../_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/javascript" src="../../../../_static/sphinxcontrib-images/LightBox2/lightbox2/js/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="../../../../_static/sphinxcontrib-images/LightBox2/lightbox2/js/lightbox.min.js"></script>
+        <script type="text/javascript" src="../../../../_static/sphinxcontrib-images/LightBox2/lightbox2-customize/jquery-noconflict.js"></script>
+>>>>>>> master
     
     <script type="text/javascript" src="../../../../_static/js/theme.js"></script>
 
     
+<<<<<<< HEAD
+=======
+
+  
+  <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/css/custom.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/sphinxcontrib-images/LightBox2/lightbox2/css/lightbox.css" type="text/css" />
+>>>>>>> master
     <link rel="index" title="Index" href="../../../../genindex.html" />
     <link rel="search" title="Search" href="../../../../search.html" />
     <link rel="next" title="2.2.7. Simulation Applications" href="simulationApps.html" />
@@ -151,7 +171,7 @@
       <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../../../index.html">Regional D* T* Application</a>
+          <a href="../../../../index.html">Regional Resilience Determination Tool</a>
         
       </nav>
 
@@ -205,10 +225,16 @@
             
   <div class="section" id="edp-applications">
 <span id="lbledpapp"></span><h1><span class="section-number">2.2.6. </span>EDP Applications<a class="headerlink" href="#edp-applications" title="Permalink to this headline">¶</a></h1>
+<<<<<<< HEAD
 <p>The <strong>EDP application</strong> specifies the types of <em>engineering demand parameters</em> (EDP) expected as output from the response simulation.
 It determines the EDP type from building properties in the <a class="reference internal" href="buildingApps.html#lblbuildingapp"><span class="std std-ref">BIM file</span></a>, the type of event in the <a class="reference internal" href="eventApps.html#lbleventapp"><span class="std std-ref">EVENT file</span></a>, and the model information from the <a class="reference internal" href="modelingApps.html#lblmodelingapp"><span class="std std-ref">SAM file</span></a>.
 It writes the type, location, and direction (DOF) of each EDP for a simulation in an “EDP.json” file in, located in its corresponding <strong>simulation working directory</strong>.
 Note that in the EDP file, DOF=1,2 are assumed to correspond to perpendicular horizontal directions, and DOF=3 corresponds to the vertical direction.</p>
+=======
+<p>The <strong>EDP application</strong> creates EDP files which specify the types of engineering demand parameters expected as output from the response simulation.
+It takes as input the BIM file created by the <a class="reference internal" href="buildingApps.html#lblbuildingapp"><span class="std std-ref">Building Application</span></a>, the EVENT file created by the <a class="reference internal" href="eventApps.html#lbleventapp"><span class="std std-ref">Event Application</span></a>, and the SAM file created by the <a class="reference internal" href="modelingApps.html#lblmodelingapp"><span class="std std-ref">Modeling Application</span></a>.
+It writes the type, location, and direction (DOF) of each EDP for each simulation in an “EDP.json” file in its corresponding <strong>simulation working directory</strong>.</p>
+>>>>>>> master
 <p>The following options for EDP applications vary in the type of EDPs identified for the simulation output.</p>
 </div>
 

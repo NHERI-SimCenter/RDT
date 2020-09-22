@@ -249,8 +249,11 @@ var Search = {
       if (results.length) {
         var item = results.pop();
         var listItem = $('<li style="display:none"></li>');
+<<<<<<< HEAD
         var requestUrl = "";
         var linkUrl = "";
+=======
+>>>>>>> master
         if (DOCUMENTATION_OPTIONS.BUILDER === 'dirhtml') {
           // dirhtml builder
           var dirname = item[0] + '/';

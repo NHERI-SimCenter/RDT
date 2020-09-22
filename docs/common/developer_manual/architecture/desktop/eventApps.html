@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>2.2.4. Event Applications &mdash; Regional D* T* Application  documentation</title>
+  <title>2.2.4. Event Applications &mdash; Regional Resilience Determination Tool  documentation</title>
   
 
   
@@ -27,15 +27,35 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="../../../../" src="../../../../_static/documentation_options.js"></script>
+<<<<<<< HEAD
         <script src="../../../../_static/jquery.js"></script>
         <script src="../../../../_static/underscore.js"></script>
         <script src="../../../../_static/doctools.js"></script>
         <script src="../../../../_static/language_data.js"></script>
         <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+=======
+        <script type="text/javascript" src="../../../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../../../_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/javascript" src="../../../../_static/sphinxcontrib-images/LightBox2/lightbox2/js/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="../../../../_static/sphinxcontrib-images/LightBox2/lightbox2/js/lightbox.min.js"></script>
+        <script type="text/javascript" src="../../../../_static/sphinxcontrib-images/LightBox2/lightbox2-customize/jquery-noconflict.js"></script>
+>>>>>>> master
     
     <script type="text/javascript" src="../../../../_static/js/theme.js"></script>
 
     
+<<<<<<< HEAD
+=======
+
+  
+  <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/css/custom.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/sphinxcontrib-images/LightBox2/lightbox2/css/lightbox.css" type="text/css" />
+>>>>>>> master
     <link rel="index" title="Index" href="../../../../genindex.html" />
     <link rel="search" title="Search" href="../../../../search.html" />
     <link rel="next" title="2.2.5. Modeling Applications" href="modelingApps.html" />
@@ -157,7 +177,7 @@
       <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../../../index.html">Regional D* T* Application</a>
+          <a href="../../../../index.html">Regional Resilience Determination Tool</a>
         
       </nav>
 
@@ -211,8 +231,13 @@
             
   <div class="section" id="event-applications">
 <span id="lbleventapp"></span><h1><span class="section-number">2.2.4. </span>Event Applications<a class="headerlink" href="#event-applications" title="Permalink to this headline">¶</a></h1>
+<<<<<<< HEAD
 <p>The <strong>event application</strong> takes the event(s) selected for a building site, associates each one with a simulation, and creates EVENT files containing the event intensity measures. It obtains the name of the event from the <a class="reference internal" href="buildingApps.html#lblbuildingapp"><span class="std std-ref">BIM file</span></a> and the intensity measure information from the input <a class="reference internal" href="userDefinedInputs.html#lbluserdefinputs"><span class="std std-ref">event files</span></a>.
 This input information is saved in an “EVENT.json” file, located in its corresponding <strong>simulation working directory</strong>.</p>
+=======
+<p>The <strong>event application</strong> creates EVENT files which consolidate information on the events (earthquake, wind, hurricane, etc.) assigned to each simulation. It takes as input the BIM file created by the <a class="reference internal" href="buildingApps.html#lblbuildingapp"><span class="std std-ref">Building Application</span></a> and JSON files corresponding to each event assigned to the building site.
+The input information for each set of events is saved in an “EVENT.json” file, located in its corresponding <strong>simulation working directory</strong>.</p>
+>>>>>>> master
 <p>The following options for event applications vary in the type of event, event properties, and format of the event file which it processes.</p>
 <div class="section" id="simcenterevent">
 <h2><span class="section-number">2.2.4.1. </span>SimCenterEvent<a class="headerlink" href="#simcenterevent" title="Permalink to this headline">¶</a></h2>
